@@ -5,58 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
-
     <div class="container">
-       <div class="box">
-         <div class="logo">
-           <i class="fa-solid fa-user"></i>
-           <span>Register</span>
-         </div>
-         <div class="inputs">
+      <div class="box">
+        <div class="logo">
+          <i class="fa-solid fa-user"></i>
+          <span>Register</span>
+
+          <div class="preview">
+            <span>Bio preview</span>
+            <p>no Bio</p>
+          </div>
+        </div>
+        <div class="inputs">
           <div class="input">
             <h4>UserName</h4>
-            <input type="text" placeholder="UserName">
+            <input type="text" placeholder="UserName" required />
           </div>
 
-           <div class="input">
+          <div class="input">
             <h4>Password</h4>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" required />
           </div>
 
-            <div class="input">
+          <div class="input">
             <h4>Confirm Password</h4>
-            <input type="password" placeholder="Confirm Password">
+            <input type="password" placeholder="Confirm Password" required />
           </div>
 
-            <div class="input">
+          <div class="input">
             <h4>Bio</h4>
-            <input type="text">
+            <textarea id="bio-input" required></textarea>
           </div>
 
-            <div class="input">
-            <h3>I agree with Ruls.</h3>
-            <input type="checkbox">
+          <div class="btn">
+            <a href="#"> <button type="submit">Submit</button></a>
           </div>
-           
-           
-            <div class="btn">
-            <button>Submit</button>
-          </div>
-
-
-         </div>
-
-
-       </div>
+        </div>
+      </div>
     </div>
-    
-    
 
-    <!-- 191 -->
+    <!-- 191   8:30 -->
     <script src="test.js"></script>
   </body>
 </html>
