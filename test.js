@@ -2,8 +2,9 @@ const bio = document.getElementById('bio-input');
 const previewbio = document.querySelector('.preview  p');
 const terms = document.getElementById('terms');
 const submitBtn = document.getElementById('submit-btn');
+const passwords = document.getElementById('password');
 
-// code
+// previewbio
 
 bio.addEventListener('input', function (event) {
   if (event.target.value) {
@@ -13,6 +14,7 @@ bio.addEventListener('input', function (event) {
   }
 });
 
+// checkbox
 terms.addEventListener('change', function (event) {
   if (event.target.checked) {
     submitBtn.disabled = false;
@@ -20,3 +22,16 @@ terms.addEventListener('change', function (event) {
     submitBtn.disabled = true;
   }
 });
+
+// password
+
+passwords.addEventListener('focus', function (event) {
+  event.target.style.border = '3px solid yellow';
+});
+
+passwords.addEventListener('blur', function (event) {
+  event.target.style.border = '3px dashed rgb(2, 172, 73)';
+});
+
+// UserName Validation
+// 6
