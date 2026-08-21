@@ -81,3 +81,9 @@ input {
   background-color: #a682df;
   text-align: center;
 }
+
+.input1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
