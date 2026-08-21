@@ -4,7 +4,7 @@ const terms = document.getElementById('terms');
 const submitBtn = document.getElementById('submit-btn');
 const passwords = document.getElementById('password');
 const userName = document.getElementById('userName');
-
+const form= document.getElementById("form");
 // previewbio
 
 bio.addEventListener('input', function (event) {
@@ -47,4 +47,3 @@ userName.addEventListener('blur', function (event) {
   }
 });
 
-// Password Validation
