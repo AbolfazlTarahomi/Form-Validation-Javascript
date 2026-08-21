@@ -28,12 +28,25 @@
         <div class="inputs">
           <div class="input">
             <h4>UserName</h4>
-            <input type="text" placeholder="UserName" required />
+            <input id="userName" type="text" placeholder="UserName" required />
+            <div class="error-message">Username is required!</div>
           </div>
+
+          <!-- 
+          <div class="input">
+            <h4>UserName</h4>
+            <input id="userName" type="text" placeholder="UserName" required />
+            <div class="eror">Eror message</div>
+          </div> -->
 
           <div class="input">
             <h4>Password</h4>
-            <input id="password" type="password" placeholder="Password" required />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
           </div>
 
           <div class="input">
@@ -46,22 +59,16 @@
             <textarea id="bio-input" required></textarea>
           </div>
 
-
-           <div class="input1">
+          <div class="input1">
             <span>I agree </span>
-            <input type="checkbox" id="terms">
+            <input type="checkbox" id="terms" />
           </div>
 
           <div class="btn">
-            <a href="#"> <button id="submit-btn" type="submit" disabled>Submit</button></a>
+            <a href="#">
+              <button id="submit-btn" type="submit" disabled>Submit</button></a
+            >
           </div>
-
-
-          
-
-
-
-
         </div>
       </div>
     </div>

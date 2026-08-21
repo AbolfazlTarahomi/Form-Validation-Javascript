@@ -87,3 +87,22 @@ input {
   align-items: center;
   justify-content: space-around;
 }
+
+
+/* eror */
+.error-message {
+  display: none;
+  color: #ff2d2d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* وقتی div والد هم input و هم error باشد */
+.input.error input {
+  border: 2px solid #ff2d2d;
+}
+
+/* پیام خطا را نشان بده */
+.input.error .error-message {
+  display: block;
+}

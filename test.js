@@ -3,6 +3,7 @@ const previewbio = document.querySelector('.preview  p');
 const terms = document.getElementById('terms');
 const submitBtn = document.getElementById('submit-btn');
 const passwords = document.getElementById('password');
+const userName = document.getElementById("userName");
 
 // previewbio
 
@@ -34,4 +35,16 @@ passwords.addEventListener('blur', function (event) {
 });
 
 // UserName Validation
-// 6
+
+
+userName.addEventListener("blur", function (event) {
+  const value = event.target.value.trim();
+  const parent = event.target.parentElement;
+
+  if (value.length < 3) {
+    parent.classList.add("error");
+  } else {
+    parent.classList.remove("error");
+  }
+});
+
